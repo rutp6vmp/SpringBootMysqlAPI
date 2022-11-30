@@ -9,4 +9,5 @@ import com.example.accessingdatamysql.User;
 
 public interface UserRepository extends CrudRepository<User, Integer> {
 
+    Iterable<User> findAllById(String id);
 }
